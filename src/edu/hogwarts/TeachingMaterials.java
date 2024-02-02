@@ -1,11 +1,11 @@
 package edu.hogwarts;
 
 public abstract class TeachingMaterials {
-    private String name;
-    private boolean onShoppingList;
-    private boolean required;
-    private boolean provided;
-    private String notes;
+    protected String name;
+    protected boolean onShoppingList;
+    protected boolean required;
+    protected boolean provided;
+    protected String notes;
 
     public TeachingMaterials(String name, boolean onShoppingList, boolean required, boolean provided, String notes) {
         this.name = name;
