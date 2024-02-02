@@ -1,22 +1,22 @@
 package edu.hogwarts;
 
 public class Person {
-    private String lastName;
     private String firstName;
+    private String lastName;
     private String middleName;
 
 
 
     public Person() {
-        this.lastName = "lastName";
-        this.firstName = "firstName";
-        this.middleName = "middleName";
     }
 
-    public Person(String lastName, String firstName, String middleName) {
-        this.lastName = lastName;
+    public Person(String firstName, String lastName, String middleName) {
         this.firstName = firstName;
+        this.lastName = lastName;
         this.middleName = middleName;
+    }
+    public Person(String firstName, String lastName) {
+        this(firstName, lastName, "-Intet mellemnavn-");
     }
 
     public String getLastName() {
