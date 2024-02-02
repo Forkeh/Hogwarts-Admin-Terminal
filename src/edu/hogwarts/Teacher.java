@@ -3,11 +3,13 @@ package edu.hogwarts;
 import java.time.LocalDate;
 
 public class Teacher extends Person {
-    String employment;
-    LocalDate employmentStart;
-    LocalDate employmentEnd;
+    private String employment;
+    private LocalDate employmentStart;
+    private LocalDate employmentEnd;
 
-    public Teacher() {super();}
+    public Teacher() {
+        super();
+    }
 
     public Teacher(String firstName, String lastName, String middleName, String employment, LocalDate employmentStart, LocalDate employmentEnd) {
         super(firstName, lastName, middleName);

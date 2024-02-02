@@ -3,11 +3,15 @@ package edu.hogwarts;
 import java.util.Arrays;
 
 public class House {
-    String name;
-    String founder;
-    String[] colors;
+    private String name;
+    private String founder;
+    private String[] colors;
 
-    public House(){};
+    public House() {
+    }
+
+    ;
+
     public House(String name, String founder, String[] colors) {
         this.name = name;
         this.founder = founder;

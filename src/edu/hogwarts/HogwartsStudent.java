@@ -2,12 +2,13 @@ package edu.hogwarts;
 
 import java.util.Arrays;
 
-public class HogwartsStudent extends Student implements HogwartsPerson{
-    House house;
-    boolean prefect;
-    String[] teams;
+public class HogwartsStudent extends Student implements HogwartsPerson {
+    private House house;
+    private boolean prefect;
+    private String[] teams;
 
-    public HogwartsStudent() {}
+    public HogwartsStudent() {
+    }
 
     public HogwartsStudent(String firstName, String lastName, String middleName, int enrollmentYear, int graduationYear, boolean graduated, House house, boolean prefect, String[] teams) {
         super(firstName, lastName, middleName, enrollmentYear, graduationYear, graduated);
@@ -24,7 +25,7 @@ public class HogwartsStudent extends Student implements HogwartsPerson{
     }
 
     public House getHouse() {
-        return house;
+        return this.house;
     }
 
     public void setHouse(House house) {
