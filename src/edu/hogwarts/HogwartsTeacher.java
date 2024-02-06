@@ -1,5 +1,7 @@
 package edu.hogwarts;
 
+import edu.generic.Teacher;
+
 import java.time.LocalDate;
 
 public class HogwartsTeacher extends Teacher implements HogwartsPerson {

@@ -1,5 +1,7 @@
 package edu.hogwarts;
 
+import edu.generic.Student;
+
 import java.util.Arrays;
 
 public class HogwartsStudent extends Student implements HogwartsPerson {

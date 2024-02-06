@@ -1,5 +1,8 @@
 package edu.hogwarts;
 
+import edu.generic.Student;
+import edu.generic.Teacher;
+
 import java.util.Arrays;
 
 public class Course {

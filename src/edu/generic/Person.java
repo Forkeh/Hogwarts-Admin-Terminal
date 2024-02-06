@@ -1,19 +1,24 @@
-package edu.hogwarts;
+package edu.generic;
+
+import java.util.UUID;
 
 public class Person {
     private String firstName;
     private String lastName;
     private String middleName;
+    private final UUID id;
 
 
 
     public Person() {
+        this.id = UUID.randomUUID();
     }
 
     public Person(String firstName, String lastName, String middleName) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.middleName = middleName;
+        this.id = UUID.randomUUID();
     }
     public Person(String firstName, String lastName) {
         this(firstName, lastName, "-Intet mellemnavn-");
