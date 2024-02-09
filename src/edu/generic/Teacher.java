@@ -1,7 +1,5 @@
 package edu.generic;
 
-import edu.generic.Person;
-
 import java.time.LocalDate;
 
 public class Teacher extends Person {
@@ -13,15 +11,15 @@ public class Teacher extends Person {
         super();
     }
 
-    public Teacher(String firstName, String lastName, String middleName, String employment, LocalDate employmentStart, LocalDate employmentEnd) {
-        super(firstName, lastName, middleName);
+    public Teacher(String firstName, String lastName, String middleName, LocalDate birthYear, String employment, LocalDate employmentStart, LocalDate employmentEnd) {
+        super(firstName, lastName, middleName, birthYear);
         this.employment = employment;
         this.employmentStart = employmentStart;
         this.employmentEnd = employmentEnd;
     }
 
-    public Teacher(String firstName, String lastName, String employment, LocalDate employmentStart, LocalDate employmentEnd) {
-        super(firstName, lastName, "-Intet mellemnavn-");
+    public Teacher(String firstName, String lastName, LocalDate birthYear, String employment, LocalDate employmentStart, LocalDate employmentEnd) {
+        super(firstName, lastName, "x", birthYear);
         this.employment = employment;
         this.employmentStart = employmentStart;
         this.employmentEnd = employmentEnd;

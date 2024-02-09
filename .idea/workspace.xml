@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0a8f0bd3-2331-4633-9795-5e9d08a6376a" name="Changes" comment="creates objects on app start">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hogwarts-classes-part1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Hogwarts-classes-part1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/generic/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/generic/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/generic/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/generic/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/generic/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/generic/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/data/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/HogwartsPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/data/HogwartsPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/HogwartsStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/data/HogwartsStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/HogwartsTeacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/data/HogwartsTeacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/data/House.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/data/Ingredient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/data/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/TeachingMaterials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/data/TeachingMaterials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/TextBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/data/TextBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/Tool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/data/Tool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/Wand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/data/Wand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/YearGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/data/YearGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/application/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/application/InitApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/application/InitApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/application/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/application/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/application/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/application/UserInterface.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Forkeh&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="f7ab411c-a5a0-4250-9042-e2f1b1094e2f" />
+        <option name="url" value="https://github.com/Forkeh/Hogwarts-classes-part1.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2bmIWKpYtilu1mbKLwUB4tKuwBr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Blume/Google Drev/KEA/Programmering/Øvelser/3. Semester/Exercises/JavaClasses",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="edu.hogwarts" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Hogwarts-Classes-part1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Hogwarts-Classes-part1" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-23eed401" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a8f0bd3-2331-4633-9795-5e9d08a6376a" name="Changes" comment="" />
+      <created>1706813859634</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706813859634</updated>
+      <workItem from="1706813860733" duration="2406000" />
+      <workItem from="1706818327316" duration="549000" />
+      <workItem from="1706818885559" duration="784000" />
+      <workItem from="1706889451507" duration="4549000" />
+      <workItem from="1706895594063" duration="4297000" />
+      <workItem from="1707132290504" duration="34000" />
+      <workItem from="1707503600441" duration="4662000" />
+    </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1706818616671</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706818616671</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1706819062465</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706819062465</updated>
+    </task>
+    <task id="LOCAL-00003" summary="more progress">
+      <option name="closed" value="true" />
+      <created>1706892778002</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706892778002</updated>
+    </task>
+    <task id="LOCAL-00004" summary="creates objects on app start">
+      <option name="closed" value="true" />
+      <created>1706898558603</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706898558603</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="more progress" />
+    <MESSAGE value="creates objects on app start" />
+    <option name="LAST_COMMIT_MESSAGE" value="creates objects on app start" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

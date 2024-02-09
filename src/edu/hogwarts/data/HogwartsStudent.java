@@ -1,7 +1,8 @@
-package edu.hogwarts;
+package edu.hogwarts.data;
 
 import edu.generic.Student;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 
 public class HogwartsStudent extends Student implements HogwartsPerson {
@@ -12,15 +13,15 @@ public class HogwartsStudent extends Student implements HogwartsPerson {
     public HogwartsStudent() {
     }
 
-    public HogwartsStudent(String firstName, String lastName, String middleName, int enrollmentYear, int graduationYear, boolean graduated, House house, boolean prefect, String[] teams) {
-        super(firstName, lastName, middleName, enrollmentYear, graduationYear, graduated);
+    public HogwartsStudent(String firstName, String lastName, String middleName, LocalDate birthYear, int enrollmentYear, int graduationYear, boolean graduated, House house, boolean prefect, String[] teams) {
+        super(firstName, lastName, middleName, birthYear, enrollmentYear, graduationYear, graduated);
         this.house = house;
         this.prefect = prefect;
         this.teams = teams;
     }
 
-    public HogwartsStudent(String firstName, String lastName, int enrollmentYear, int graduationYear, boolean graduated, House house, boolean prefect, String[] teams) {
-        super(firstName, lastName, enrollmentYear, graduationYear, graduated);
+    public HogwartsStudent(String firstName, String lastName, LocalDate birthYear, int enrollmentYear, int graduationYear, boolean graduated, House house, boolean prefect, String[] teams) {
+        super(firstName, lastName, birthYear, enrollmentYear, graduationYear, graduated);
         this.house = house;
         this.prefect = prefect;
         this.teams = teams;

@@ -1,31 +1,39 @@
 package edu.hogwarts.application;
 
 import edu.generic.Student;
+
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.UUID;
 
 public class StudentController {
 
-    HashMap<UUID, Student> students;
+    HashMap<UUID, Student> studentsMap;
+
+    public StudentController() {
+        this.studentsMap = new HashMap<>();
+    }
 
 
     public void createStudent(Student student) {
-
+        studentsMap.put(UUID.randomUUID(), student);
     }
 
-    public int getStudent(int id) {
-        return -1;
+    public Student getStudent(UUID id) {
+
+        return studentsMap.get(id);
     }
 
-    public Student[] getAllStudents() {
-        return null;
+    public List<Student> getAllStudents() {
+        return new ArrayList<Student>(this.studentsMap.values());
     }
 
-    public void updateStudent(int id, Student student) {
-
+    public void updateStudent(UUID id, Student student) {
+        studentsMap.put(id, student);
     }
 
-    public void deleteStudent(int id) {
-
+    public void deleteStudent(UUID id) {
+        studentsMap.remove(id);
     }
 }

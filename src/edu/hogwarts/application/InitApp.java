@@ -1,10 +1,16 @@
 package edu.hogwarts.application;
 
-import edu.generic.Student;
-import edu.hogwarts.*;
+import edu.hogwarts.data.*;
+
 import java.time.LocalDate;
 
 public class InitApp {
+    private final StudentController studentController;
+//    private final TeacherController teacherController;
+
+    public InitApp(StudentController studentController) {
+        this.studentController = studentController;
+    }
 
     public void createData() {
         System.out.println("Creating data!");
@@ -16,21 +22,30 @@ public class InitApp {
         House slytherin = new House("Slytherin", "Salazar Slytherin", new String[]{"Green", "Silver"});
 
         // Teachers
-        HogwartsTeacher slughorn = new HogwartsTeacher("Horace", "Slughorn", "Potions Master", LocalDate.of(1981, 9, 1), null, slytherin, false);
-        HogwartsTeacher snape = new HogwartsTeacher("Severus", "Snape", "Potions Master", LocalDate.of(1996, 9, 1), LocalDate.of(1997, 6, 30), slytherin, true);
+//        HogwartsTeacher slughorn = new HogwartsTeacher("Horace", "Slughorn", "Potions Master", LocalDate.of(1981, 9, 1), null, slytherin, false);
+//        HogwartsTeacher snape = new HogwartsTeacher("Severus", "Snape", "Potions Master", LocalDate.of(1996, 9, 1), LocalDate.of(1997, 6, 30), slytherin, true);
 
         // Students
-        HogwartsStudent harry = new HogwartsStudent("Harry", "Potter", "James", 1991, 1998, true, gryffindor, true, new String[]{"Quidditch"});
-        HogwartsStudent hermione = new HogwartsStudent("Hermione", "Granger", "Jean", 1991, 1998, true, gryffindor, true, new String[]{"Wizard Chess"});
-        HogwartsStudent ronald = new HogwartsStudent("Ronald", "Weasley", "Bilius", 1991, 1998, true, gryffindor, false, new String[]{"Wizard Chess", "Quidditch"});
-        HogwartsStudent ginny = new HogwartsStudent("Ginny", "Weasley", "Molly", 1991, 1999, true, gryffindor, false, new String[]{"Quidditch"});
-        HogwartsStudent luna = new HogwartsStudent("Luna", "Lovegood", 1991, 1999, true, ravenclaw, false, new String[]{"Magical Creatures"});
-        HogwartsStudent draco = new HogwartsStudent("Draco", "Malfoy", "Lucius", 1991, 1998, true, slytherin, true, new String[]{"Quidditch"});
-        HogwartsStudent cedric = new HogwartsStudent("Cedric", "Diggory", 1991, 2000, true, hufflepuff, true, new String[]{"Quidditch"});
+//        HogwartsStudent harry = new HogwartsStudent("Harry", "Potter", "James", 1991, 1998, true, gryffindor, true, new String[]{"Quidditch"});
+//        HogwartsStudent hermione = new HogwartsStudent("Hermione", "Granger", "Jean", 1991, 1998, true, gryffindor, true, new String[]{"Wizard Chess"});
+//        HogwartsStudent ronald = new HogwartsStudent("Ronald", "Weasley", "Bilius", 1991, 1998, true, gryffindor, false, new String[]{"Wizard Chess", "Quidditch"});
+//        HogwartsStudent ginny = new HogwartsStudent("Ginny", "Weasley", "Molly", 1991, 1999, true, gryffindor, false, new String[]{"Quidditch"});
+//        HogwartsStudent luna = new HogwartsStudent("Luna", "Lovegood", 1991, 1999, true, ravenclaw, false, new String[]{"Magical Creatures"});
+//        HogwartsStudent draco = new HogwartsStudent("Draco", "Malfoy", "Lucius", 1991, 1998, true, slytherin, true, new String[]{"Quidditch"});
+//        HogwartsStudent cedric = new HogwartsStudent("Cedric", "Diggory", 1991, 2000, true, hufflepuff, true, new String[]{"Quidditch"});
+
+        HogwartsStudent harry = new HogwartsStudent("Harry", "Potter", "James", LocalDate.of(1980, 7, 31),
+                1991, 1998, true, gryffindor, true, new String[]{"Quidditch"});
+
+        HogwartsStudent hermione = new HogwartsStudent("Hermione", "Granger", "Jean", LocalDate.of(1979, 9, 19),
+                1991, 1998, true, gryffindor, true, new String[]{"Study Group"});
+
+        HogwartsStudent ronald = new HogwartsStudent("Ron", "Weasley", "Bilius", LocalDate.of(1980, 3, 1),
+                1991, 1998, true, gryffindor, false, new String[]{"Wizard Chess"});
 
         // Year group
-        Student[] students1991 = {harry, hermione, ronald, ginny, luna, draco, cedric};
-        YearGroup yearGroup1991 = new YearGroup(1991, LocalDate.now(), students1991);
+//        Student[] students1991 = {harry, hermione, ronald, ginny, luna, draco, cedric};
+//        YearGroup yearGroup1991 = new YearGroup(1991, LocalDate.now(), students1991);
 
         // Subject
         Subject subjectPotions = new Subject("Potions", 6, false);
@@ -53,6 +68,15 @@ public class InitApp {
         TeachingMaterials[] coursePotionsMaterials = {toolCauldron, toolSilverKnife, ingredientPowderedBicornHorn, ingredientLeeches, ingredientMoonstone, ingredientWolfsbane, ingredientUnicornHair};
 
         // Course
-        Course coursePotions = new Course(subjectPotions, slughorn, students1991, coursePotionsMaterials);
+//        Course coursePotions = new Course(subjectPotions, slughorn, students1991, coursePotionsMaterials);
+
+        // Add students to Student controller
+        studentController.createStudent(harry);
+        studentController.createStudent(hermione);
+        studentController.createStudent(ronald);
+//        studentController.createStudent(ginny);
+//        studentController.createStudent(luna);
+//        studentController.createStudent(draco);
+//        studentController.createStudent(cedric);
     }
 }

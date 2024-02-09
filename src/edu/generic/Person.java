@@ -1,27 +1,30 @@
 package edu.generic;
 
+import java.time.LocalDate;
 import java.util.UUID;
 
 public class Person {
+    private final UUID id;
     private String firstName;
     private String lastName;
     private String middleName;
-    private final UUID id;
-
+    private LocalDate birthYear;
 
 
     public Person() {
         this.id = UUID.randomUUID();
     }
 
-    public Person(String firstName, String lastName, String middleName) {
+    public Person(String firstName, String lastName, String middleName, LocalDate birthYear) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.middleName = middleName;
         this.id = UUID.randomUUID();
+        this.birthYear = birthYear;
     }
-    public Person(String firstName, String lastName) {
-        this(firstName, lastName, "-Intet mellemnavn-");
+
+    public Person(String firstName, String lastName, LocalDate birthYear) {
+        this(firstName, lastName, "x", birthYear);
     }
 
     public String getLastName() {
@@ -47,6 +50,11 @@ public class Person {
 
     public void setMiddleName(String middleName) {
         this.middleName = middleName;
+    }
+
+    public int getAge() {
+        var today = LocalDate.of(1992, 1, 1);
+        return this.birthYear.until(today).getYears();
     }
 
     @Override
