@@ -1,5 +1,6 @@
 package edu.hogwarts.application;
 
+import edu.generic.Student;
 import edu.hogwarts.data.*;
 
 import java.time.LocalDate;
@@ -22,18 +23,22 @@ public class InitApp {
         House slytherin = new House("Slytherin", "Salazar Slytherin", new String[]{"Green", "Silver"});
 
         // Teachers
-//        HogwartsTeacher slughorn = new HogwartsTeacher("Horace", "Slughorn", "Potions Master", LocalDate.of(1981, 9, 1), null, slytherin, false);
-//        HogwartsTeacher snape = new HogwartsTeacher("Severus", "Snape", "Potions Master", LocalDate.of(1996, 9, 1), LocalDate.of(1997, 6, 30), slytherin, true);
+        HogwartsTeacher headmaster = new HogwartsTeacher("Albus", "Dumbledore", "Percival", LocalDate.of(1881, 8, 17),
+                "Headmaster", LocalDate.of(1935, 9, 1), null, null, false);
+
+        HogwartsTeacher headOfGryffindor = new HogwartsTeacher("Minerva", "McGonagall", "Euphemia", LocalDate.of(1925, 10, 4),
+                "Transfiguration Professor", LocalDate.of(1956, 9, 1), null, gryffindor, true);
+
+        HogwartsTeacher headOfSlytherin = new HogwartsTeacher("Severus", "Snape", "", LocalDate.of(1960, 1, 9),
+                "Potions Master", LocalDate.of(1981, 9, 1), null, slytherin, true);
+
+        HogwartsTeacher headOfHufflepuff = new HogwartsTeacher("Pomona", "Sprout", "", LocalDate.of(1941, 5, 15),
+                "Herbology Professor", LocalDate.of(1974, 9, 1), null, hufflepuff, true);
+
+        HogwartsTeacher headOfRavenclaw = new HogwartsTeacher("Filius", "Flitwick", "", LocalDate.of(1958, 10, 17),
+                "Charms Master", LocalDate.of(1980, 9, 1), null, ravenclaw, true);
 
         // Students
-//        HogwartsStudent harry = new HogwartsStudent("Harry", "Potter", "James", 1991, 1998, true, gryffindor, true, new String[]{"Quidditch"});
-//        HogwartsStudent hermione = new HogwartsStudent("Hermione", "Granger", "Jean", 1991, 1998, true, gryffindor, true, new String[]{"Wizard Chess"});
-//        HogwartsStudent ronald = new HogwartsStudent("Ronald", "Weasley", "Bilius", 1991, 1998, true, gryffindor, false, new String[]{"Wizard Chess", "Quidditch"});
-//        HogwartsStudent ginny = new HogwartsStudent("Ginny", "Weasley", "Molly", 1991, 1999, true, gryffindor, false, new String[]{"Quidditch"});
-//        HogwartsStudent luna = new HogwartsStudent("Luna", "Lovegood", 1991, 1999, true, ravenclaw, false, new String[]{"Magical Creatures"});
-//        HogwartsStudent draco = new HogwartsStudent("Draco", "Malfoy", "Lucius", 1991, 1998, true, slytherin, true, new String[]{"Quidditch"});
-//        HogwartsStudent cedric = new HogwartsStudent("Cedric", "Diggory", 1991, 2000, true, hufflepuff, true, new String[]{"Quidditch"});
-
         HogwartsStudent harry = new HogwartsStudent("Harry", "Potter", "James", LocalDate.of(1980, 7, 31),
                 1991, 1998, true, gryffindor, true, new String[]{"Quidditch"});
 
@@ -43,9 +48,36 @@ public class InitApp {
         HogwartsStudent ronald = new HogwartsStudent("Ron", "Weasley", "Bilius", LocalDate.of(1980, 3, 1),
                 1991, 1998, true, gryffindor, false, new String[]{"Wizard Chess"});
 
+        HogwartsStudent draco = new HogwartsStudent("Draco", "Malfoy", "", LocalDate.of(1980, 6, 5),
+                1991, 1998, true, slytherin, true, new String[]{"Slytherin Quidditch"});
+
+        HogwartsStudent luna = new HogwartsStudent("Luna", "Lovegood", "", LocalDate.of(1981, 2, 13),
+                1992, 1999, true, ravenclaw, true, new String[]{"The Quibbler"});
+
+        HogwartsStudent cedric = new HogwartsStudent("Cedric", "Diggory", "", LocalDate.of(1977, 9, 1),
+                1989, 1995, true, hufflepuff, true, new String[]{"Hufflepuff Quidditch"});
+
+        HogwartsStudent neville = new HogwartsStudent("Neville", "Longbottom", "", LocalDate.of(1980, 7, 30),
+                1991, 1998, true, gryffindor, false, new String[]{});
+
+        HogwartsStudent pansy = new HogwartsStudent("Pansy", "Parkinson", "", LocalDate.of(1980, 6, 12),
+                1991, 1998, true, slytherin, false, new String[]{});
+
+        HogwartsStudent cho = new HogwartsStudent("Cho", "Chang", "", LocalDate.of(1979, 10, 2),
+                1991, 1998, true, ravenclaw, true, new String[]{"Ravenclaw Quidditch"});
+
+        HogwartsStudent cormac = new HogwartsStudent("Cormac", "McLaggen", "", LocalDate.of(1979, 5, 1),
+                1991, 1998, true, gryffindor, false, new String[]{"Gryffindor Quidditch"});
+
+        HogwartsStudent justin = new HogwartsStudent("Justin", "Finch-Fletchley", "", LocalDate.of(1979, 8, 4),
+                1991, 1998, true, hufflepuff, false, new String[]{});
+
+        HogwartsStudent marietta = new HogwartsStudent("Marietta", "Edgecombe", "", LocalDate.of(1980, 1, 4),
+                1991, 1998, true, ravenclaw, false, new String[]{});
+
         // Year group
-//        Student[] students1991 = {harry, hermione, ronald, ginny, luna, draco, cedric};
-//        YearGroup yearGroup1991 = new YearGroup(1991, LocalDate.now(), students1991);
+        Student[] students1991 = {harry, hermione, ronald, neville, draco, pansy, cormac, justin, marietta};
+        YearGroup yearGroup1991 = new YearGroup(1991, LocalDate.now(), students1991);
 
         // Subject
         Subject subjectPotions = new Subject("Potions", 6, false);
@@ -68,15 +100,20 @@ public class InitApp {
         TeachingMaterials[] coursePotionsMaterials = {toolCauldron, toolSilverKnife, ingredientPowderedBicornHorn, ingredientLeeches, ingredientMoonstone, ingredientWolfsbane, ingredientUnicornHair};
 
         // Course
-//        Course coursePotions = new Course(subjectPotions, slughorn, students1991, coursePotionsMaterials);
+        Course coursePotions = new Course(subjectPotions, headOfSlytherin, students1991, coursePotionsMaterials);
 
         // Add students to Student controller
         studentController.createStudent(harry);
         studentController.createStudent(hermione);
         studentController.createStudent(ronald);
-//        studentController.createStudent(ginny);
-//        studentController.createStudent(luna);
-//        studentController.createStudent(draco);
-//        studentController.createStudent(cedric);
+        studentController.createStudent(luna);
+        studentController.createStudent(draco);
+        studentController.createStudent(cedric);
+        studentController.createStudent(neville);
+        studentController.createStudent(pansy);
+        studentController.createStudent(cho);
+        studentController.createStudent(cormac);
+        studentController.createStudent(justin);
+        studentController.createStudent(marietta);
     }
 }

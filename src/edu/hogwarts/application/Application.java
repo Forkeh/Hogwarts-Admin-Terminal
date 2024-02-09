@@ -1,7 +1,6 @@
 package edu.hogwarts.application;
 
 public class Application {
-    private InitApp initApp;
     private UserInterface userInterface;
 
     public Application() {

@@ -4,33 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a8f0bd3-2331-4633-9795-5e9d08a6376a" name="Changes" comment="creates objects on app start">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hogwarts-classes-part1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Hogwarts-classes-part1/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/generic/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/generic/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/generic/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/generic/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/generic/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/generic/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/data/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/HogwartsPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/data/HogwartsPerson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/HogwartsStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/data/HogwartsStudent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/HogwartsTeacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/data/HogwartsTeacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/data/House.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/data/Ingredient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/data/Subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/TeachingMaterials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/data/TeachingMaterials.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/TextBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/data/TextBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/Tool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/data/Tool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/Wand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/data/Wand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/YearGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/data/YearGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/application/Application.java" afterDir="false" />
+    <list default="true" id="0a8f0bd3-2331-4633-9795-5e9d08a6376a" name="Changes" comment="stuff">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/application/InitApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/application/InitApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/application/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/application/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/application/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/application/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +114,7 @@
       <workItem from="1706889451507" duration="4549000" />
       <workItem from="1706895594063" duration="4297000" />
       <workItem from="1707132290504" duration="34000" />
-      <workItem from="1707503600441" duration="4662000" />
+      <workItem from="1707503600441" duration="5995000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -172,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706898558603</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="stuff">
+      <option name="closed" value="true" />
+      <created>1707511810022</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707511810022</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +177,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="more progress" />
     <MESSAGE value="creates objects on app start" />
-    <option name="LAST_COMMIT_MESSAGE" value="creates objects on app start" />
+    <MESSAGE value="stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="stuff" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
