@@ -26,7 +26,7 @@ public class InitApp {
 
         // Teachers
         HogwartsTeacher headmaster = new HogwartsTeacher("Albus", "Dumbledore", "Percival", LocalDate.of(1881, 8, 17),
-                "Headmaster", LocalDate.of(1935, 9, 1), null, null, false);
+                "Headmaster", LocalDate.of(1935, 9, 1), null, gryffindor, false);
 
         HogwartsTeacher headOfGryffindor = new HogwartsTeacher("Minerva", "McGonagall", "Euphemia", LocalDate.of(1925, 10, 4),
                 "Transfiguration Professor", LocalDate.of(1956, 9, 1), null, gryffindor, true);

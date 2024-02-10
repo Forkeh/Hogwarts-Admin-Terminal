@@ -20,14 +20,21 @@ public class UserInterface {
 
     public void printStudents() {
 
-        List<Person> personsList = new ArrayList<>(studentController.getAllStudents());
+        List<Person> personsList = new ArrayList<>();
+        personsList.addAll(studentController.getAllStudents());
+        personsList.addAll(teacherController.getAllTeachers());
 
-        System.out.printf("| %-10s - %10s - %15s - %10s - %10s |\n", "Firstname", "Middlename", "Lastname", "Age", "House");
+        System.out.printf("| %-10s - %10s - %15s - %10s - %10s - %10s |\n", "Firstname", "Middlename", "Lastname", "Age", "House", "Role");
 
         for (Person person : personsList) {
-            System.out.printf("| %-10s - %10s - %15s - %10s - %10s |\n", person.getFirstName(), person.getMiddleName(), person.getLastName(), person.getAge(), ((HogwartsPerson) person).getHouse().getName());
+            String role = StudentOrTeacherConversion(person.getClass().toString());
+            System.out.printf("| %-10s - %10s - %15s - %10s - %10s - %10s |\n", person.getFirstName(), person.getMiddleName(), person.getLastName(), person.getAge(), ((HogwartsPerson) person).getHouse().getName(), role);
         }
 
 
+    }
+
+    public String StudentOrTeacherConversion(String input) {
+        return input.toLowerCase().contains("student") ? "Student" : "Teacher";
     }
 }
