@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a8f0bd3-2331-4633-9795-5e9d08a6376a" name="Changes" comment="sorting works">
+    <list default="true" id="0a8f0bd3-2331-4633-9795-5e9d08a6376a" name="Changes" comment="filter works">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/application/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/application/UserInterface.java" afterDir="false" />
     </list>
@@ -65,6 +65,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Blume/Google Drev/KEA/Programmering/Øvelser/3. Semester/Exercises/JavaClasses",
     "node.js.detected.package.eslint": "true",
@@ -118,7 +119,8 @@
       <workItem from="1706889451507" duration="4549000" />
       <workItem from="1706895594063" duration="4297000" />
       <workItem from="1707132290504" duration="34000" />
-      <workItem from="1707503600441" duration="20529000" />
+      <workItem from="1707503600441" duration="20879000" />
+      <workItem from="1707592244819" duration="2009000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -192,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707588807615</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="filter works">
+      <option name="closed" value="true" />
+      <created>1707592049032</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1707592049032</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +228,8 @@
     <MESSAGE value="Made TeacherController methods, updated print to use HogwartsPerson" />
     <MESSAGE value="Shows role on print" />
     <MESSAGE value="sorting works" />
-    <option name="LAST_COMMIT_MESSAGE" value="sorting works" />
+    <MESSAGE value="filter works" />
+    <option name="LAST_COMMIT_MESSAGE" value="filter works" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
