@@ -7,10 +7,12 @@ import java.time.LocalDate;
 
 public class InitApp {
     private final StudentController studentController;
-//    private final TeacherController teacherController;
+    private final TeacherController teacherController;
 
-    public InitApp(StudentController studentController) {
+    public InitApp(StudentController studentController, TeacherController teacherController) {
         this.studentController = studentController;
+        this.teacherController = teacherController;
+
     }
 
     public void createData() {
@@ -115,5 +117,12 @@ public class InitApp {
         studentController.createStudent(cormac);
         studentController.createStudent(justin);
         studentController.createStudent(marietta);
+
+        // Add teachers to Teacher controller
+        teacherController.createTeacher(headmaster);
+        teacherController.createTeacher(headOfGryffindor);
+        teacherController.createTeacher(headOfHufflepuff);
+        teacherController.createTeacher(headOfGryffindor);
+        teacherController.createTeacher(headOfSlytherin);
     }
 }

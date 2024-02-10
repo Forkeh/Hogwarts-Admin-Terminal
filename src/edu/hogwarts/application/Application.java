@@ -9,9 +9,10 @@ public class Application {
     public void startApp() {
         System.out.println("Start app");
         StudentController studentController = new StudentController();
-        var initApp = new InitApp(studentController);
+        TeacherController teacherController = new TeacherController();
+        var initApp = new InitApp(studentController, teacherController);
         initApp.createData();
-        this.userInterface = new UserInterface(studentController);
+        this.userInterface = new UserInterface(studentController, teacherController);
         userInterface.printStudents();
 
     }
