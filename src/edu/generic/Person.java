@@ -52,6 +52,10 @@ public class Person {
         this.middleName = middleName;
     }
 
+    public UUID getId() {
+        return id;
+    }
+
     public int getAge() {
         var today = LocalDate.of(1992, 1, 1);
         return this.birthYear.until(today).getYears();

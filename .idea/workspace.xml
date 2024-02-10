@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a8f0bd3-2331-4633-9795-5e9d08a6376a" name="Changes" comment="Made TeacherController methods, updated print to use HogwartsPerson">
+    <list default="true" id="0a8f0bd3-2331-4633-9795-5e9d08a6376a" name="Changes" comment="Shows role on print">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/application/InitApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/application/InitApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hogwarts-classes-part1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hogwarts-classes-part1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/generic/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/generic/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/application/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/hogwarts/application/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hogwarts/application/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +122,7 @@
       <workItem from="1706889451507" duration="4549000" />
       <workItem from="1706895594063" duration="4297000" />
       <workItem from="1707132290504" duration="34000" />
-      <workItem from="1707503600441" duration="12158000" />
+      <workItem from="1707503600441" duration="17122000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -177,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707583113107</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Shows role on print">
+      <option name="closed" value="true" />
+      <created>1707583785770</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707583785770</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,10 +212,14 @@
     <MESSAGE value="stuff" />
     <MESSAGE value="remade test data" />
     <MESSAGE value="Made TeacherController methods, updated print to use HogwartsPerson" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made TeacherController methods, updated print to use HogwartsPerson" />
+    <MESSAGE value="Shows role on print" />
+    <option name="LAST_COMMIT_MESSAGE" value="Shows role on print" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Hogwarts_Classes_part1$Main.ic" NAME="Main Coverage Results" MODIFIED="1707584449392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
