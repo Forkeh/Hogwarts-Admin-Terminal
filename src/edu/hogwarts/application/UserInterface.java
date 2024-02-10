@@ -4,6 +4,7 @@ import edu.generic.Person;
 import edu.hogwarts.data.HogwartsPerson;
 
 import java.util.*;
+import java.util.function.Predicate;
 
 public class UserInterface {
 
@@ -28,6 +29,7 @@ public class UserInterface {
         System.out.println("Press 'a' to see list");
         System.out.println("Press 's' to see sorted list");
         System.out.println("Press 'f' to see filtered list");
+        System.out.println("Press 'x' to exit");
         System.out.println("--------------------------------------");
 
         Scanner sc = new Scanner(System.in);
@@ -41,7 +43,8 @@ public class UserInterface {
                 printPersonsList(this.combinedList);
             }
             case "s" -> sortOptions();
-            case "f" -> System.out.println("FILTER");
+            case "f" -> filterOptions();
+            case "x" -> exit();
             default -> {
                 System.out.println("Unknown input, try again");
                 options();
@@ -49,71 +52,124 @@ public class UserInterface {
         }
     }
 
+    public void exit() {
+        System.out.println("Bye bye!");
+    }
+
     public void printPersonsList(Collection<Person> personsList) {
 
-        System.out.printf("| %-40s - %-15s - %15s - %15s - %10s - %15s - %10s |\n", "ID", "Firstname", "Middlename", "Lastname", "Age", "House", "Role");
+        System.out.println("|--------------------------------------------------------------------------------------------------------------------------------------------|");
+        System.out.printf("| %-40s   %-15s   %15s   %15s   %10s   %15s   %10s |\n", "ID", "Firstname", "Middlename", "Lastname", "Age", "House", "Role");
+        System.out.println("|--------------------------------------------------------------------------------------------------------------------------------------------|");
 
         for (Person person : personsList) {
             String role = StudentOrTeacherConversion(person.getClass().toString());
-            System.out.printf("| %-40s - %-15s - %15s - %15s - %10s - %15s - %10s |\n", person.getId(), person.getFirstName(), person.getMiddleName(), person.getLastName(), person.getAge(), ((HogwartsPerson) person).getHouse().getName(), role);
+            System.out.printf("| %-40s   %-15s   %15s   %15s   %10s   %15s   %10s |\n", person.getId(), person.getFirstName(), person.getMiddleName(), person.getLastName(), person.getAge(), ((HogwartsPerson) person).getHouse().getName(), role);
         }
+        System.out.println("|--------------------------------------------------------------------------------------------------------------------------------------------|");
 
         options();
     }
 
 
     public void sortOptions() {
-        System.out.println("What would you like to sort by? Pick an option");
-        System.out.println("1 - First name");
-        System.out.println("2 - Middle name");
-        System.out.println("3 - Last name");
-        System.out.println("4 - Age");
-        System.out.println("5 - House");
+        Scanner sc = new Scanner(System.in);
+        Collection<Person> sortedList = new ArrayList<>();
+
+        while (true) {
+            System.out.println("What would you like to sort by? Pick an option");
+            System.out.println("1 - First name");
+            System.out.println("2 - Middle name");
+            System.out.println("3 - Last name");
+            System.out.println("4 - Age");
+            System.out.println("5 - House");
+
+            String input = sc.nextLine();
+
+
+            switch (input) {
+                case "1" -> {
+                    sortedList = sortPersons(Comparator.comparing(Person::getFirstName));
+                }
+                case "2" -> {
+                    sortedList = sortPersons(Comparator.comparing(Person::getMiddleName));
+                }
+                case "3" -> {
+                    sortedList = sortPersons(Comparator.comparing(Person::getLastName));
+                }
+                case "4" -> {
+                    sortedList = sortPersons(Comparator.comparing(Person::getAge));
+                }
+                case "5" -> {
+                    sortedList = sortPersons(Comparator.comparing(person -> ((HogwartsPerson) person).getHouse().toString()));
+                }
+                default -> {
+                    System.out.println("Unknown command, try another");
+                    continue;
+                }
+            }
+
+            System.out.println("Would you like to reverse the order?");
+            System.out.println("Type 'y' for yes, 'n' for no");
+            input = sc.nextLine();
+
+            switch (input) {
+                case "y" -> {
+                    Collections.reverse((List<Person>) sortedList);
+                    printPersonsList(sortedList);
+                }
+                case "n" -> {
+                    printPersonsList(sortedList);
+                }
+                default -> {
+                    System.out.println("Unknown command, try another");
+                    sortOptions();
+                }
+            }
+            break;
+        }
+    }
+
+    public void filterOptions() {
+        System.out.println("What would you like to filter by? Pick an option");
+        System.out.println("1 - Students");
+        System.out.println("2 - Teachers");
+        System.out.println("3 - House Gryffindor");
+        System.out.println("4 - House Hufflepuff");
+        System.out.println("5 - House Ravenclaw");
+        System.out.println("6 - House Slytherin");
 
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
 
-        Collection<Person> sortedList = new ArrayList<>();
+        Collection<Person> filterList = new ArrayList<>();
 
         switch (input) {
             case "1" -> {
-                sortedList = sortPersons(Comparator.comparing(Person::getFirstName));
+                filterList = filterPersons(person -> StudentOrTeacherConversion(person.getClass().toString()).contains("Student"));
             }
             case "2" -> {
-                sortedList = sortPersons(Comparator.comparing(Person::getMiddleName));
+                filterList = filterPersons(person -> StudentOrTeacherConversion(person.getClass().toString()).contains("Teacher"));
             }
             case "3" -> {
-                sortedList = sortPersons(Comparator.comparing(Person::getLastName));
+                filterList = filterPersons(person -> ((HogwartsPerson) person).getHouse().getName().equals("Gryffindor"));
             }
             case "4" -> {
-                sortedList = sortPersons(Comparator.comparing(Person::getAge));
+                filterList = filterPersons(person -> ((HogwartsPerson) person).getHouse().getName().equals("Hufflepuff"));
             }
             case "5" -> {
-                sortedList = sortPersons(Comparator.comparing(person -> ((HogwartsPerson) person).getHouse().toString()));
+                filterList = filterPersons(person -> ((HogwartsPerson) person).getHouse().getName().equals("Ravenclaw"));
+            }
+            case "6" -> {
+                filterList = filterPersons(person -> ((HogwartsPerson) person).getHouse().getName().equals("Slytherin"));
             }
             default -> {
                 System.out.println("Unknown command, try another");
-                sortOptions();
+                filterOptions();
             }
         }
+        printPersonsList(filterList);
 
-        System.out.println("Would you like to reverse the order?");
-        System.out.println("Type 'y' for yes, 'n' for no");
-        input = sc.nextLine();
-
-        switch (input) {
-            case "y" -> {
-                Collections.reverse((List<Person>) sortedList);
-                printPersonsList(sortedList);
-            }
-            case "n" -> {
-                printPersonsList(sortedList);
-            }
-            default -> {
-                System.out.println("Unknown command, try another");
-                sortOptions();
-            }
-        }
     }
 
     public String StudentOrTeacherConversion(String input) {
@@ -131,5 +187,9 @@ public class UserInterface {
         List<Person> sortedList = combineStudentTeacherLists();
         sortedList.sort(comparator);
         return sortedList;
+    }
+
+    public Collection<Person> filterPersons(Predicate<Person> predicate) {
+        return new ArrayList<Person>(combinedList.stream().filter(predicate).toList());
     }
 }
