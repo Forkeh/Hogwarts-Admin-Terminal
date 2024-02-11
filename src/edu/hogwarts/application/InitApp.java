@@ -16,7 +16,6 @@ public class InitApp {
     }
 
     public void createData() {
-        System.out.println("Creating data!");
 
         // Houses
         House gryffindor = new House("Gryffindor", "Godric Gryffindor", new String[]{"Red", "Gold"});

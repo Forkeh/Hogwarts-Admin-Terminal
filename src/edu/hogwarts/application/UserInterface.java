@@ -10,8 +10,8 @@ public class UserInterface {
 
     private final StudentController studentController;
     private final TeacherController teacherController;
-    private Collection<Person> combinedList;
-    private Scanner sc;
+    private final Scanner sc;
+    private final Collection<Person> combinedList;
 
 
     public UserInterface(StudentController studentController, TeacherController teacherController) {
